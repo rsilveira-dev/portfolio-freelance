@@ -17,6 +17,12 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="page-effects" aria-hidden="true">
+      <div class="mesh"></div>
+      <div class="beam beam-one"></div>
+      <div class="beam beam-two"></div>
+    </div>
+
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Rafael Silveira home">
         <span>RS</span>
@@ -35,7 +41,7 @@
       <section class="hero section">
         <div class="hero-copy">
           <p class="eyebrow">PHP, .NET, automation and practical AI</p>
-          <h1>Practical web development for small business tasks.</h1>
+          <h1>Freelance-ready web solutions with clear scope and sharp delivery.</h1>
           <p class="hero-text">
             I help small businesses fix PHP and .NET issues, build clean landing
             pages, automate repetitive workflows, and add useful AI features.
@@ -46,12 +52,21 @@
             </a>
             <a class="button secondary" href="#work">See examples</a>
           </div>
+          <div class="trust-row" aria-label="Trust highlights">
+            <span>Fixed scope</span>
+            <span>Fast prototypes</span>
+            <span>Testable handoff</span>
+          </div>
         </div>
 
         <div class="hero-panel" aria-label="Project summary">
           <div class="status-line">
             <span class="status-dot"></span>
             Available for fixed-scope freelance work
+          </div>
+          <div class="spotlight">
+            <span>Current focus</span>
+            <strong>Small business web tasks that need a reliable finish.</strong>
           </div>
           <div class="metrics">
             <div>
@@ -118,53 +133,119 @@
       <section id="work" class="section work-section">
         <div class="section-heading">
           <p class="eyebrow">Proof projects</p>
-          <h2>Examples built around real freelance demand.</h2>
+          <h2>Interactive demos built around real freelance demand.</h2>
         </div>
 
-        <div class="work-list">
-          <article class="work-item">
-            <div>
-              <p class="tag">Landing Page</p>
-              <h3>SaaS product landing page</h3>
+        <div class="showcase-grid">
+          <article class="project-card featured">
+            <div class="project-preview ai-preview">
+              <span class="node"></span>
+              <span class="node second"></span>
+              <span class="node third"></span>
+              <div class="preview-lines">
+                <i></i><i></i><i></i>
+              </div>
             </div>
-            <p>
-              A modern, responsive page designed to present a product, explain
-              benefits, and convert visitors into leads.
-            </p>
-          </article>
-
-          <article class="work-item">
-            <div>
-              <p class="tag">Automation</p>
-              <h3>CSV to business report</h3>
-            </div>
-            <p>
-              A workflow that cleans spreadsheet data and generates a simple
-              report for decision-making.
-            </p>
-          </article>
-
-          <article class="work-item">
             <div>
               <p class="tag">AI Integration</p>
               <h3>AI email assistant</h3>
             </div>
             <p>
-              A tool that turns short notes into polished client replies,
-              support responses, or follow-up emails.
+              A product-style interface that turns rough client notes into polished replies,
+              with tone selection, analysis, copy action, and AI-inspired visuals.
             </p>
+            <a href="../ai-email-assistant/index.html">Open demo</a>
           </article>
 
+          <article class="project-card">
+            <div class="project-preview landing-preview">
+              <span></span>
+            </div>
+            <div>
+              <p class="tag">Landing Page</p>
+              <h3>Local service landing page</h3>
+            </div>
+            <p>
+              A polished page for a service business with proof sections, quote flow,
+              conversion panels, and premium responsive layout.
+            </p>
+            <a href="../landing-page-demo/index.html">Open demo</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-preview data-preview">
+              <i style="--h: 72%"></i>
+              <i style="--h: 48%"></i>
+              <i style="--h: 86%"></i>
+              <i style="--h: 58%"></i>
+            </div>
+            <div>
+              <p class="tag">Automation</p>
+              <h3>CSV report automation</h3>
+            </div>
+            <p>
+              A browser-based reporting tool that reads CSV files, summarizes data,
+              detects quality, and generates a visual chart.
+            </p>
+            <a href="../csv-report-automation/index.html">Open demo</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section stack-section">
+        <div class="section-heading">
+          <p class="eyebrow">Stack and delivery</p>
+          <h2>Practical tools for practical business outcomes.</h2>
+        </div>
+        <div class="stack-grid">
           <article class="work-item">
             <div>
               <p class="tag">Backend</p>
-              <h3>.NET/PHP bug fix case study</h3>
+              <h3>PHP and .NET</h3>
             </div>
             <p>
-              A before-and-after case showing how a broken form, endpoint, or
-              validation flow was diagnosed and fixed.
+              Fixes, APIs, integrations, business systems, and internal workflows.
             </p>
           </article>
+          <article class="work-item">
+            <div>
+              <p class="tag">Frontend</p>
+              <h3>Responsive interfaces</h3>
+            </div>
+            <p>
+              Landing pages, dashboards, forms, and tools that feel polished.
+            </p>
+          </article>
+          <article class="work-item">
+            <div>
+              <p class="tag">Automation</p>
+              <h3>CSV, Excel and reports</h3>
+            </div>
+            <p>
+              Small tools that reduce repetitive spreadsheet and reporting work.
+            </p>
+          </article>
+          <article class="work-item">
+            <div>
+              <p class="tag">AI</p>
+              <h3>Useful assistants</h3>
+            </div>
+            <p>
+              Practical AI features for emails, summaries, support, and operations.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section case-strip">
+        <div>
+          <p class="eyebrow">Positioning</p>
+          <h2>Built for clients who need a useful result, not endless meetings.</h2>
+        </div>
+        <div class="case-points">
+          <span>1-5 day demos</span>
+          <span>Clear handoff notes</span>
+          <span>Small, testable scope</span>
         </div>
       </section>
 
